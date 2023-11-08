@@ -11,19 +11,20 @@ npm start
 # End Points Api
 #⚠️ i have shared a postman collection Also you into a code file name: (Book management.postman_collection.json)
   you can import collection also into a code.
-Add a new book
+  
+⚠️ Add a new book
 1. /api/books
 
-View a list of all books
+⚠️ View a list of all books
 2. /api/Viewbooks
 
-View details of a specific book by its ID
+⚠️ View details of a specific book by its ID
 3. /api/Views_books/:id
 
-Update a book's details
+⚠️ Update a book's details
 4. /api/Update-Books/:id
 
-Delete a book
+⚠️ Delete a book
 5. /api/Delete-book/:id
 
 //===============================================================================================//
