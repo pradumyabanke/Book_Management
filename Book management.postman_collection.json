@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "a0158fe1-edfe-4f00-a7a4-79c2212771ea",
+		"name": "Book management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26708201",
+		"_collection_link": "https://bold-trinity-207194.postman.co/workspace/My-Workspace~36b7cbb9-1c45-4037-82ee-ec480d2654e3/collection/26708201-a0158fe1-edfe-4f00-a7a4-79c2212771ea?action=share&source=collection_link&creator=26708201"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n   {\r\n  \"title\": \"To Kill a Mockingbird\",\r\n  \"author\": \"Harper Lee\",\r\n  \"summary\": \"The story of racial injustice in the American South during the 1930s.\"\r\n},\r\n{\r\n  \"title\": \"1984\",\r\n  \"author\": \"George Orwell\",\r\n  \"summary\": \"A dystopian novel set in a totalitarian society under the rule of Big Brother.\"\r\n},\r\n{\r\n  \"title\": \"1984\",\r\n  \"author\": \"George Orwell\",\r\n  \"summary\": \"A dystopian novel set in a totalitarian society under the rule of Big Brother.\"\r\n},\r\n{\r\n  \"title\": \"Pride and Prejudice\",\r\n  \"author\": \"Jane Austen\",\r\n  \"summary\": \"A classic novel that explores the themes of love, class, and reputation in the 19th century.\"\r\n},\r\n{\r\n  \"title\": \"The Catcher in the Rye\",\r\n  \"author\": \"J.D. Salinger\",\r\n  \"summary\": \"A coming-of-age story of a teenager's experiences in New York City.\"\r\n},\r\n{\r\n  \"title\": \"The Hobbit\",\r\n  \"author\": \"J.R.R. Tolkien\",\r\n  \"summary\": \"The adventure of Bilbo Baggins as he embarks on a quest with a group of dwarves.\"\r\n},\r\n{\r\n  \"title\": \"The Lord of the Rings\",\r\n  \"author\": \"J.R.R. Tolkien\",\r\n  \"summary\": \"An epic fantasy trilogy set in the world of Middle-earth.\"\r\n},\r\n{\r\n  \"title\": \"The Lord of the Rings\",\r\n  \"author\": \"J.R.R. Tolkien\",\r\n  \"summary\": \"An epic fantasy trilogy set in the world of Middle-earth.\"\r\n},\r\n{\r\n  \"title\": \"The Hunger Games\",\r\n  \"author\": \"Suzanne Collins\",\r\n  \"summary\": \"In a dystopian future, teenagers are forced to participate in a televised death match.\"\r\n},\r\n{\r\n  \"title\": \"Harry Potter and the Sorcerer's Stone\",\r\n  \"author\": \"J.K. Rowling\",\r\n  \"summary\": \"The first book in the popular Harry Potter series, detailing the young wizard's journey.\"\r\n},\r\n{\r\n  \"title\": \"The Alchemist\",\r\n  \"author\": \"Paulo Coelho\",\r\n  \"summary\": \"A philosophical novel about a shepherd's journey to find a treasure.\"\r\n},\r\n{\r\n  \"title\": \"Moby-Dick\",\r\n  \"author\": \"Herman Melville\",\r\n  \"summary\": \"The epic tale of Captain Ahab's obsession with a white whale.\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/books",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/Viewbooks",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Viewbooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Views Books Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/Views_books/654b7990c9f9eab8d3d096bc",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Views_books",
+						"654b7990c9f9eab8d3d096bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Books Details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Moby Dick\",\r\n    \"author\": \"Herman melville\",\r\n    \"summary\": \"The epic tale of Captain Ahab's obsession with a white whale\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/Update-Books/654b7990c9f9eab8d3d096bc",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Update-Books",
+						"654b7990c9f9eab8d3d096bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/Delete-book/654b7990c9f9eab8d3d096bc",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Delete-book",
+						"654b7990c9f9eab8d3d096bc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
